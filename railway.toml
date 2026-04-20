@@ -3,4 +3,5 @@ builder = "nixpacks"
 
 [deploy]
 startCommand = "python orchestrator.py"
-restartPolicyType = "always"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
